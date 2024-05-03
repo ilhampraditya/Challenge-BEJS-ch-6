@@ -1,0 +1,76 @@
+### register
+POST https://expressjs-development-3b31.up.railway.app/api/v1/users
+Content-Type: application/json
+
+{
+    "first_name": "ilham",
+    "last_name": "praditya",
+    "email": "ilham@gmail.com",
+    "password": "ilham123"
+}
+
+### login
+POST https://expressjs-development-3b31.up.railway.app/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "ilham@gmail.com",
+    "password": "ilham123"
+}
+
+### login token
+GET https://expressjs-development-3b31.up.railway.app/api/v1/auth/authenticate
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### Get all user
+GET https://expressjs-development-3b31.up.railway.app/api/v1/users
+
+### Get detail user
+GET https://expressjs-development-3b31.up.railway.app/api/v1/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### update user
+PUT https://expressjs-development-3b31.up.railway.app/api/v1/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+Content-Type: application/json
+
+{
+    "address" : "Jl. mawar",
+    "occupation" : "Web Developer" 
+}
+
+### update avatar
+PUT https://expressjs-development-3b31.up.railway.app/api/v1/users/1/avatar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### delete user
+DELETE https://expressjs-development-3b31.up.railway.app/api/v1/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+
+######## BOOKS ################
+
+### create book
+POST https://expressjs-development-3b31.up.railway.app/api/v1/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### get all book
+GET https://expressjs-development-3b31.up.railway.app/api/v1/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### search book
+GET https://expressjs-development-3b31.up.railway.app/api/v1/books/search?search=bercerita
+
+### get detail book
+GET https://expressjs-development-3b31.up.railway.app/api/v1/books/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+### update book
+PUT https://expressjs-development-3b31.up.railway.app/api/v1/books/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+
+
+### delete book
+DELETE https://expressjs-development-3b31.up.railway.app/api/v1/books/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6ImlsaGFtIiwibGFzdF9uYW1lIjoicHJhZGl0eWEiLCJlbWFpbCI6ImlsaGFtQGdtYWlsLmNvbSIsImFkZHJlc3MiOm51bGwsIm9jY3VwYXRpb24iOm51bGwsImF2YXRhcl91cmwiOm51bGwsImlhdCI6MTcxNDczNTgzNH0.eoczK-ay5HocwGKyi1iC6Wu5w1duTJm9_1nWAqYywJw
+

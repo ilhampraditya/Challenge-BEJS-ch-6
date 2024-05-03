@@ -1,21 +1,41 @@
-### register
+### register in development
 POST https://expressjs-development-3b31.up.railway.app/api/v1/users
 Content-Type: application/json
 
 {
-    "first_name": "ilham",
-    "last_name": "praditya",
-    "email": "ilham@gmail.com",
-    "password": "ilham123"
+    "first_name": "dimas",
+    "last_name": "keren",
+    "email": "dimas@gmail.com",
+    "password": "dimas123"
 }
 
-### login
+### register in production
+POST https://expressjs-prod-6f52.up.railway.app/api/v1/users
+Content-Type: application/json
+
+{
+    "first_name": "oby",
+    "last_name": "sangar",
+    "email": "oby@gmail.com",
+    "password": "oby123"
+}
+
+### login in development
 POST https://expressjs-development-3b31.up.railway.app/api/v1/auth/login
 Content-Type: application/json
 
 {
-    "email": "ilham@gmail.com",
-    "password": "ilham123"
+    "email": "dimas@gmail.com",
+    "password": "dimas123"
+}
+
+### login in production
+POST https://expressjs-prod-6f52.up.railway.app/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "oby@gmail.com",
+    "password": "oby123"
 }
 
 ### login token

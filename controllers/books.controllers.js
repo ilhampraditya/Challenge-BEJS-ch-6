@@ -38,7 +38,7 @@ module.exports={
                     judul,
                     deskripsi,
                     imageUrl: url,
-                    userId: req.user.id
+                    user_id: req.user.id
                 },
             });
 

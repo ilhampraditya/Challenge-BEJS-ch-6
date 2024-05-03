@@ -236,7 +236,7 @@ module.exports={
 
             // Delete book from Prisma
             await prisma.book.deleteMany({
-                where: { userId: id },
+                where: { user_id: id },
             });
 
             // Delete user from Prisma
